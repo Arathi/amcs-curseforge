@@ -18,7 +18,8 @@
     "gen-release-note": "modern gen-release-note",
     "release": "modern release",
     "new": "modern new",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
@@ -29,17 +30,22 @@
     "node_modules/",
     "dist/"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
   "devDependencies": {
-    "@modern-js/module-tools": "2.54.5",
+    "@jest/globals": "^29.7.0",
     "@modern-js/eslint-config": "2.54.5",
-    "typescript": "~5.0.4",
+    "@modern-js/module-tools": "2.54.5",
+    "@types/jest": "^29.5.12",
     "@types/node": "~16.11.7",
-    "rimraf": "~3.0.2",
+    "@types/node-fetch": "^2.6.11",
+    "husky": "~8.0.1",
+    "jest": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
     "lint-staged": "~13.1.0",
+    "node-fetch": "^2.7.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "rimraf": "~3.0.2",
+    "ts-jest": "^29.1.5",
+    "typescript": "~5.0.4"
   },
   "sideEffects": [],
   "publishConfig": {
