@@ -13,12 +13,14 @@ import DataResponse, {
   ListResponse,
   PaginationResponse,
 } from './schemas/responses/data-response';
+import { ModLoaderType } from './schemas/requests/mod-loader';
 
 export { type CurseForgeApi, AbstractCurseForgeApi };
 export type {
   GetCategoriesParameters,
   SearchModsParameters,
   GetModFilesParameters,
+  ModLoaderType,
 };
 export type { Category, Mod, File };
 export type { DataResponse, ListResponse, PaginationResponse };
